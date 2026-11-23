@@ -358,7 +358,7 @@
             <label>Forma de entrega</label>
             <div class="ship">
               <label class="ship-opt"><input type="radio" name="entrega" value="frete" checked><span><b>Frete fixo Curitiba</b><small>R$ 10,00 · grátis acima de R$ 200</small></span></label>
-              <label class="ship-opt"><input type="radio" name="entrega" value="retirada"><span><b>Retirada presencial com a Dé</b><small>Sem frete · combinamos pelo WhatsApp</small></span></label>
+              <label class="ship-opt"><input type="radio" name="entrega" value="retirada"><span><b>Retirada presencial com a Débora</b><small>Sem frete · combinamos pelo WhatsApp</small></span></label>
             </div>
           </div>
           <div class="field full addr">
@@ -578,7 +578,7 @@
       document.getElementById('resume').innerHTML =
         '<div><span>Unidades</span><span>' + dados.quantidade + '</span></div>' +
         '<div><span>' + (dados.entrega === 'retirada' ? 'Retirada' : 'Entrega') + '</span><span>' + dados.data + '</span></div>' +
-        '<div><span>Frete</span><span>' + (dados.entrega === 'retirada' ? 'Retirada com a Dé' : (dados.frete ? brl(dados.frete) : 'Grátis')) + '</span></div>' +
+        '<div><span>Frete</span><span>' + (dados.entrega === 'retirada' ? 'Retirada com a Débora' : (dados.frete ? brl(dados.frete) : 'Grátis')) + '</span></div>' +
         '<div><span>Total</span><span>' + brl(dados.total) + '</span></div>';
       document.getElementById('formBody').style.display = 'none';
       document.getElementById('thanks').style.display = 'block';
